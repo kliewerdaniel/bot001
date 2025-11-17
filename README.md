@@ -7,7 +7,7 @@
 
 **A cutting-edge AI-powered research assistant and conversational agent** that leverages **Graph-based Retrieval Augmented Generation (GraphRAG)** to provide intelligent, context-aware responses using online discussions and research knowledge bases.
 
-![Bot001 Architecture](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Bot001+Architecture+Diagram)
+![Bot001](ss.png)
 
 ## 🌟 Key Features
 
