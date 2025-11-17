@@ -159,7 +159,7 @@ fi
 # Start Next.js frontend
 echo "⚛️ Starting Next.js frontend on port 3001..."
 cd frontend
-npm run dev &
+PORT=3001 npm run dev &
 FRONTEND_PID=$!
 cd ..
 
