@@ -84,8 +84,8 @@
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd bot001-redbot02
+git clone https://github.com/kliewerdaniel/bot001.git
+cd bot001
 
 # Run the automated setup script
 ./start.sh
@@ -108,7 +108,7 @@ docker-compose up -d
 
 # 2. Start Ollama and pull models
 ollama serve &
-ollama pull granite-code:3b  # Or your preferred model
+ollama pull granite4:micro-h  # Or your preferred model
 ollama pull mxbai-embed-large:latest
 
 # 3. Install Python dependencies
@@ -234,7 +234,7 @@ Models are configured in `scripts/reddit_reasoning_agent.py`:
 
 ```python
 # Primary reasoning model
-MODEL_NAME = "granite-code:3b"
+MODEL_NAME = "granite4:micro-h"
 
 # Embedding model for retrieval
 EMBEDDING_MODEL = "mxbai-embed-large:latest"
@@ -294,25 +294,6 @@ cd frontend && npm test
 python3 test.sh
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-```bash
-# Fork and clone
-git clone https://github.com/yourusername/bot001.git
-cd bot001
-
-# Create feature branch
-git checkout -b feature/amazing-enhancement
-
-# Make changes and test
-./test.sh
-
-# Submit PR
-```
 
 ### Code Standards
 
@@ -330,15 +311,6 @@ git checkout -b feature/amazing-enhancement
 - [ ] **Cloud Deployment**: Managed deployment options with AWS/GCP/Azure
 - [ ] **Mobile App**: React Native companion application
 
-## 🏆 Performance Benchmarks
-
-| Metric | Value | Notes |
-|--------|-------|-------|
-| Query Latency | <500ms | Average response time |
-| Retrieval Accuracy | 94.2% | Top-10 precision |
-| Context Relevance | 87.6% | F1 score on benchmarks |
-| Knowledge Coverage | 2.8M | Nodes in knowledge graph |
-| Concurrent Users | 100+ | Supported simultaneously |
 
 ## 📄 License
 
@@ -352,14 +324,6 @@ git checkout -b feature/amazing-enhancement
 - **Reddit Community**: Source of rich conversational data
 - **Next.js Team**: Exceptional React framework
 
-## 📞 Support
-
-- **📧 Email**: support@bot001.example.com
-- **💬 Discord**: [Bot001 Community](https://discord.gg/bot001)
-- **🐛 Issues**: [GitHub Issues](https://github.com/username/bot001/issues)
-- **📖 Documentation**: [Full Docs](https://bot001-docs.example.com)
-
----
 
 **Built with ❤️ for researchers, developers, and AI enthusiasts by the Bot001 team.**
 
